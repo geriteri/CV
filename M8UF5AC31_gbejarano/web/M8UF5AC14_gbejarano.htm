@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="cat">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari 1 d'enregistrament</title>
+</head>
+
+<body>
+    <h1>Formulari bàsic de registre</h1>
+    <form method="GET">
+        <label>
+            <p>Nom <input type="text" maxlength="50" name="nom" required></p>
+        </label>
+        <label>
+            <p>Cognom <input type="text" maxlength="50" name="cognom" required></p>
+        </label>
+        <label>
+            <p>Sexe:
+                <input type="radio" name="hm" value="h" required> Home
+                <input type="radio" name="hm" value="m" required> Dona
+            </p>
+        </label>
+        <label>
+            <p>Correu <input type="text" maxlength="50" name="correu" required></p>
+        </label>
+        <label>
+            <p>Població:</p>
+                <select name="Població">
+                    <option selected value="0">Escull una població</option>
+                    <option value="1">Arbúcies</option>
+                    <option value="2">Badalona</option>
+                    <option value="3">Barcelona</option>
+                    <option value="4">Girona</option>
+                    <option value="5">Vilassar de Mar</option>
+                </select>
+        </label>
+        <p></p>
+        <label>
+            <p>Descripció:</p>
+                <textarea name="comentaris" rows="10" cols="40"></textarea> 
+        </label>
+        <p></p>
+        <label>
+            <input type="checkbox" name="Verificació" checked="yes">Vull rebre informació sobre novetats i ofertes.
+        </label>
+        <p></p>
+        <label>
+            <input type="checkbox" name="Verificació">Declaro haver llegit i acceptar les condicions generals del programa i la normativa sobre protecció de dades indicacda al RGPD.
+        </label>
+        <p></p>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>

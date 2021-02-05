@@ -1,0 +1,9 @@
+body {
+    background-color: lightslategray;
+}
+a:hover {
+    color: lime;
+}
+img:hover {
+    opacity: 50%;
+}
