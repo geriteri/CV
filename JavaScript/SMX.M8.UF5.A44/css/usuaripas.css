@@ -1,0 +1,11 @@
+.passwd {
+    display: block;
+    width: auto;
+}
+body {
+    padding: 1%;
+}
+#usuari {
+    display: block;
+    width: auto;
+}
