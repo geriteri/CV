@@ -1,0 +1,25 @@
+h1 {
+    color: black;
+}
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+li {
+    border-style: solid;
+    background-color: blue;
+    margin-bottom: 5px;
+    width: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+a {
+    text-decoration: none;
+}
+li.arc {
+    background-color: green;
+}
+li:hover {
+    border: 1px solid red; color: black; background-color: gray;
+    
+}

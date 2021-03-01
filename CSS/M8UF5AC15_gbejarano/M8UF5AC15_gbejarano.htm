@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="cat">
+<head>
+    <script type="text/javascript">
+        function validar(){
+            var psswd=document.getElementById("psswd").value;
+            var confpsswd=document.getElementById("confpsswd").value;
+            if(psswd==confpsswd){
+                return true;
+            }
+            else{
+                alert("No coincideix");
+                return false;
+            }
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari d'enviament</title>
+</head>
+<body style="background-color:#EFEFEF;">
+<TABLE align="center" style="font-family: Verdana;"> 
+    <tr>
+        <th bgcolor="306090" align="left" colspan="3" style="color:white;"><h3>Enviar missatge</h3></th>
+        <th bgcolor="306090"><img src="img/gb_reload_s.gif"></th>
+    </tr>
+    <p></p>
+    <form method="GET" onsubmit="return validar();" action="mailto:gerard.bejarano@inslapineda.cat" enctype="text/plain">
+    <tr>
+        <th align="right"><strong>Nom:</strong></th>
+        <th><input type="text" maxlength="50" name="nom" required></th>
+    </tr>
+    <tr>
+        <th align="right"><strong>Usuari:</strong></th>
+        <th><input type="text" maxlength="8" name="usuari" required></th>
+    </tr>
+    <tr>
+        <th align="right"><strong>Contrasenya:</strong></th>
+        <th><input type="password" id="psswd" maxlength="20" name="contrasenya" required></th>
+    </tr>
+    <tr>
+        <th align="right"><strong>Repetir contrasenya:</strong></th>
+        <th><input type="password" id="confpsswd" maxlength="50" name="contrasenya" required></th>
+    </tr>
+    <tr>
+        <th align="right"><strong>E-mail:</strong></th>
+        <th><input type="email" maxlength="50" name="email" required></th>
+    </tr>
+    <tr>
+        <th>Quins jocs t'interessen?</th>
+        <td align="left"><input type="checkbox" name="Verificació">Grand Theft Auto V</td>
+    </tr><tr>
+        <th></th>
+        <td align="left"><input type="checkbox" name="Verificació">Rocket League</td>
+    </tr><tr>
+        <th></th>
+        <td align="left"><input type="checkbox" name="Verificació">Test Drive Unlimited II</td>
+    </tr><tr>
+        <th></th>
+        <td align="left"><input type="checkbox" name="Verificació">The Sims 4</td>
+    </tr>
+    <tr>
+        <th align="right"><strong>Arxiu:</strong></th></th>
+        <th><input type="text" maxlength="50" name="arxiu" required></th>
+        <th><input type="file" value="Seleccionar archivo"></th>
+    </tr>
+    <tr>
+        <th align="right"><strong>Imatge:</strong></th>
+        <th><input type="text" maxlength="50" name="arxiu" required></th>
+        <th><input type="file" value="Seleccionar archivo"></th>
+    </tr>
+    <tr>
+        <td colspan="3" align="center"><p>El tamany de l'arxiu i la imatge no pot execir de 4KBytes.</p></td>
+    </tr>
+    <tr>
+        <th>
+            <td align="center">Requereixo resposta:</td>
+        </th>
+        <th align="left">
+        <input type="radio" name="verificació" value="yes">Sí<input type="radio" name="verificació" value="no">No
+        </th>
+    </tr>
+    <tr>
+        <th></th>
+        <th><h3>Missatge</h3></th>
+    </tr>
+    <tr>
+        <th></th>
+        <th><textarea rows="5"></textarea></th>
+    </tr>
+    <tr>
+        <th></th>
+        <th><input type="submit"><input type="reset"></th>
+        <th></th>
+    </tr>
+   </form>
+</TABLE>
+</body>
+</html>
